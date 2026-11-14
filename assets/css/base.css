@@ -20,6 +20,7 @@ a { color: var(--c-accent); text-decoration-thickness: 1px; text-underline-offse
 a:hover { text-decoration: underline; }
 h1, h2, h3 { font-family: var(--font-head); color: var(--c-primary); line-height: 1.2; margin: 0 0 .5em; }
 :focus-visible { outline: 2px solid var(--c-accent); outline-offset: 3px; }
+[hidden] { display: none !important; }
 .visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .muted { color: var(--c-muted); }
 .container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 clamp(16px, 4vw, 32px); }
@@ -257,6 +258,8 @@ h1, h2, h3 { font-family: var(--font-head); color: var(--c-primary); line-height
 .tags li { font: 500 .8rem/1 var(--font-mono); padding: 6px 9px; border-radius: 4px; background: var(--c-accent-soft); color: var(--c-accent); }
 
 /* ---------- modal (pop-up) ---------- */
+.modal { pointer-events: none; }
+.modal.is-open { pointer-events: auto; }
 .modal { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; padding: clamp(0px, 3vw, 32px); }
 .modal__backdrop { position: absolute; inset: 0; background: rgba(8, 16, 30, .62); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); opacity: 0; transition: opacity .28s ease; }
 .modal__panel {
@@ -313,9 +316,11 @@ h1, h2, h3 { font-family: var(--font-head); color: var(--c-primary); line-height
 
 /* ---------- lightbox ---------- */
 .lightbox { position: fixed; inset: 0; z-index: 200; background: rgba(0,0,0,.92); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity .2s; cursor: zoom-out; }
-.lightbox.is-open { opacity: 1; }
+.lightbox.is-open { opacity: 1; pointer-events: auto; }
+.lightbox:not(.is-open) { pointer-events: none; }
 .lightbox figure { margin: 0; max-width: 92vw; max-height: 88vh; display: flex; flex-direction: column; align-items: center; }
 .lightbox img { max-width: 92vw; max-height: 82vh; object-fit: contain; border-radius: 4px; }
+.lightbox img[src$=".svg"] { width: min(900px, 92vw); }
 .lightbox figcaption { color: #ddd; margin-top: 10px; font-size: .92rem; text-align: center; }
 .lightbox__nav { position: absolute; top: 50%; transform: translateY(-50%); width: 48px; height: 48px; border-radius: 50%; border: 0; background: rgba(255,255,255,.12); color: #fff; font-size: 2rem; cursor: pointer; }
 .lightbox__prev { left: 14px; } .lightbox__next { right: 14px; }
