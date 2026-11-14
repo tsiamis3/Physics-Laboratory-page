@@ -823,7 +823,11 @@
       const fromUrl = new URLSearchParams(location.search).get("theme");
       const theme = (fromUrl && /^[\w-]+$/.test(fromUrl) ? fromUrl : null) || CFG.theme || "scientific";
       const link = document.getElementById("theme-css");
-      if (link && !link.getAttribute("href").endsWith(`/${theme}.css`)) link.href = `assets/css/themes/${theme}.css`;
+      // keep the same ?v=... version as the page uses (cache-busting)
+      const ver = (link && link.getAttribute("href").split("?")[1]) || "";
+      if (link && !link.getAttribute("href").includes(`/${theme}.css`)) {
+        link.href = `assets/css/themes/${theme}.css${ver ? "?" + ver : ""}`;
+      }
       document.documentElement.dataset.theme = theme;
     }
     renderAll() {

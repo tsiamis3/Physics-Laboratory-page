@@ -50,3 +50,7 @@ Link to a specific language with `?lang=el`.
 
 ## Publish (GitHub Pages)
 Settings → Pages → Source: *Deploy from a branch* → `main` / `(root)`.
+
+## Cache
+GitHub Pages lets browsers keep files for ~10 minutes. After a change, refresh with **Ctrl+F5**.
+Engine/CSS changes get a new `?v=...` number in the `.html` files so browsers always fetch them.
