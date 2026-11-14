@@ -1,0 +1,59 @@
+/* =====================================================================
+ *  THEME: scientific  (default)
+ *  Clean, academic look: white paper, deep navy, teal accent.
+ *  ---------------------------------------------------------------------
+ *  A theme only sets the variables below. To make a new theme:
+ *  copy this file, rename it (e.g. themes/my-theme.css), change values,
+ *  and set  theme: "my-theme"  in data/config.js.
+ * ===================================================================== */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&family=IBM+Plex+Mono:wght@500&display=swap");
+
+:root {
+  /* Fonts (Plex supports Greek) */
+  --font-body: "IBM Plex Sans", "Segoe UI", Roboto, Arial, sans-serif;
+  --font-head: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+
+  /* Colours */
+  --c-bg: #ffffff;
+  --c-bg-alt: #f4f6f9;
+  --c-surface: #ffffff;
+  --c-text: #1b2433;
+  --c-muted: #5d6878;
+  --c-border: #dfe4eb;
+  --c-primary: #12325c;        /* navy: headings, header */
+  --c-primary-contrast: #ffffff;
+  --c-accent: #0f8b8d;         /* teal: links, highlights */
+  --c-accent-soft: #e3f4f4;
+
+  /* Status / badge colours */
+  --c-ongoing: #1e7f4f;
+  --c-completed: #6b7280;
+  --c-announcement: #b45309;
+  --c-event: #6d28d9;
+  --c-position: #be123c;
+
+  /* Header & home hero */
+  --header-bg: rgba(255, 255, 255, 0.92);
+  --header-text: var(--c-primary);
+  --hero-bg: radial-gradient(1200px 500px at 85% 20%, #1d4f8a 0%, transparent 60%),
+             linear-gradient(135deg, #0b1f3a 0%, #12325c 55%, #0e4a5c 100%);
+  --hero-text: #ffffff;
+  --hero-muted: rgba(255, 255, 255, 0.78);
+  --track-color: rgba(120, 200, 255, 0.55);
+  --track-color-2: rgba(255, 196, 120, 0.55);
+
+  --footer-bg: #0b1f3a;
+  --footer-text: rgba(255, 255, 255, 0.82);
+
+  /* Shape */
+  --radius: 10px;
+  --radius-sm: 6px;
+  --shadow: 0 1px 2px rgba(16, 32, 64, 0.06), 0 4px 14px rgba(16, 32, 64, 0.06);
+  --shadow-hover: 0 4px 10px rgba(16, 32, 64, 0.08), 0 18px 40px rgba(16, 32, 64, 0.14);
+  --maxw: 1180px;
+
+  /* Placeholder graphics (used when no image is given) */
+  --ph-sat: 45%;
+  --ph-light: 30%;
+}
