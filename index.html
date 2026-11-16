@@ -3,26 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nuclear Physics Laboratory</title>
-  <meta name="description" content="Nuclear Physics Laboratory, School of Physics, Aristotle University of Thessaloniki">
-  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/css/base.css?v=20261114-3">
-  <!-- theme: changed automatically from data/config.js (or ?theme=name) -->
-  <link rel="stylesheet" id="theme-css" href="assets/css/themes/scientific.css?v=20261114-3">
+  <title>LAPI · Laboratory for Accelerator Physics and Instrumentation</title>
+  <meta name="description" content="Laboratory for Accelerator Physics and Instrumentation (LAPI), School of Physics, Aristotle University of Thessaloniki">
+  <link rel="icon" href="images/site/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/base.css?v=20261116-1">
+  <link rel="stylesheet" id="theme-css" href="assets/css/themes/scientific.css?v=20261116-1">
+  <!-- Shows a red banner if a data file has an error (e.g. a missing comma) -->
+  <script>window.LAB_ERRORS=[];addEventListener("error",function(e){var t=e.target;if(t&&t.tagName==="SCRIPT"){LAB_ERRORS.push(t.getAttribute("src").split("?")[0]+": could not be loaded.");}else if(e.filename&&/\/data\//.test(e.filename)){LAB_ERRORS.push(e.filename.split("/").pop().split("?")[0].replace(/^/,"data/")+", line "+e.lineno+": "+e.message);}},true);</script>
 </head>
 <body data-page="home">
   <div id="site-header"></div>
   <main id="main"><noscript><p style="padding:2rem">Please enable JavaScript to view this site.</p></noscript></main>
   <div id="site-footer"></div>
 
-  <!-- content (edit these files) -->
-  <script src="data/config.js?v=20261114-3"></script>
-  <script src="data/ui-strings.js?v=20261114-3"></script>
-  <script src="data/people.js?v=20261114-3"></script>
-  <script src="data/research.js?v=20261114-3"></script>
-  <script src="data/projects.js?v=20261114-3"></script>
-  <script src="data/news.js?v=20261114-3"></script>
-  <!-- engine -->
-  <script src="assets/js/app.js?v=20261114-3"></script>
+  <!-- Content: edit these files -->
+  <script src="data/site.js?v=20261116-1"></script>
+  <script src="data/ui-strings.js?v=20261116-1"></script>
+  <script src="data/members.js?v=20261116-1"></script>
+  <script src="data/research.js?v=20261116-1"></script>
+  <script src="data/projects.js?v=20261116-1"></script>
+  <script src="data/news.js?v=20261116-1"></script>
+  <!-- Engine (no need to edit) -->
+  <script src="assets/js/app.js?v=20261116-1"></script>
 </body>
 </html>
