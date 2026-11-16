@@ -200,7 +200,7 @@ LAB.site = {
   usefulLinks: [
     { label: { en: "Aristotle University of Thessaloniki", el: "Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης" }, url: "https://www.auth.gr/en/" },
     { label: { en: "School of Physics", el: "Τμήμα Φυσικής" }, url: "https://www.physics.auth.gr/" },
-    { label: { en: "AUTH in the world", el: "Το ΑΠΘ στον κόσμο" }, url: "https://www.auth.gr/en/international/" },
+    { label: { en: "AUTH in the world", el: "Το ΑΠΘ στον κόσμο" }, url: "https://www.auth.gr/en/international-en/" },
     { label: { en: "AUTH Library", el: "Βιβλιοθήκη ΑΠΘ" }, url: "https://www.lib.auth.gr/en" },
     { label: { en: "\"Phenomenon\" Magazine", el: "Περιοδικό «Φαινόμενον»" }, url: "http://phenomenon.physics.auth.gr/" },
     { label: { en: "AAM Department Seminar Archive", el: "Αρχείο σεμιναρίων Τομέα ΑΑΜ" }, url: "https://www.astro.auth.gr/n/?p=previous_seminars" },
