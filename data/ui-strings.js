@@ -32,7 +32,7 @@ LAB.strings = {
   "home.news":          { en: "News & announcements", el: "Νέα & ανακοινώσεις" },
   "home.members":       { en: "Meet the members of the laboratory", el: "Γνωρίστε τα μέλη του εργαστηρίου" },
 
-  "about.title":        { en: "About the Laboratory", el: "Σχετικά με το Εργαστήριο" },
+  "about.title":        { en: "About LAPI", el: "Σχετικά με το LAPI" },
   "about.directions":   { en: "Main directions", el: "Κύριες κατευθύνσεις" },
 
   "members.title":      { en: "Members", el: "Μέλη" },

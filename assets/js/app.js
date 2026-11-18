@@ -689,7 +689,7 @@
     render() {
       const i = this.i, ui = this.ui, A = SITE.about || {}, H = SITE.home || {};
       this.setTitle(i.t("about.title"));
-      this.main.innerHTML = ui.pageHead(i.t("about.title"), i.pick(SITE.name)) + `
+      this.main.innerHTML = ui.pageHead(i.t("about.title"), i.pick(A.subtitle) || i.pick(SITE.name)) + `
         <section class="section section--tight"><div class="container about">
           ${(A.sections || []).map((s) => `<div class="about__block reveal"><h2 class="section__title">${esc(i.pick(s.title))}</h2><div class="prose">${i.pick(s.text)}</div></div>`).join("")}
         </div></section>
