@@ -45,28 +45,19 @@ LAB.members = [
     group: "faculty",
     position: { en: "Professor", el: "Καθηγητής" },
     photo: "images/members/dimitrios-sampsonidis.jpg",
-    email: "",
-    cv: "",
-    research: ["atlas-lhc"]
+    email: "sampson@physics.auth.gr",
+    cv: "https://www.physics.auth.gr/uploads/person/translation/cv/217/CV-Sampsonidis.pdf",
+    research: ["atlas-lhc","ifigeneia"]
   },
-  {
-    id: "christos-eleftheriadis",
-    name: { en: "Christos Eleftheriadis", el: "Χρήστος Ελευθεριάδης" },
-    group: "faculty",
-    position: { en: "Professor", el: "Καθηγητής" },
-    photo: "images/members/christos-eleftheriadis.jpg",
-    email: "",
-    cv: "",
-    research: ["instrumentation", "cast", "ntof"]
-  },
+
   {
     id: "ilias-savvidis",
     name: { en: "Ilias Savvidis", el: "Ηλίας Σαββίδης" },
     group: "faculty",
     position: { en: "Professor", el: "Καθηγητής" },
     photo: "images/members/ilias-savvidis.jpg",
-    email: "",
-    cv: "",
+    email: "savvidis@physics.auth.gr",
+    cv: "https://www.physics.auth.gr/uploads/person/translation/cv/213/CV_Savvidis.pdf",
     research: ["cast", "ntof"]
   },
   {
@@ -75,8 +66,8 @@ LAB.members = [
     group: "faculty",
     position: { en: "Professor", el: "Καθηγήτρια" },
     photo: "images/members/alexandra-ioannidou.jpg",
-    email: "",
-    cv: "",
+    email: "anta@physics.auth.gr",
+    cv: "https://www.linkedin.com/in/alexandra-ioannidou-6ba36b44",
     research: ["data-analysis-ml"]
   },
   {
@@ -85,8 +76,8 @@ LAB.members = [
     group: "faculty",
     position: { en: "Professor", el: "Καθηγητής" },
     photo: "images/members/stylianos-stoulos.jpg",
-    email: "",
-    cv: "",
+    email: "stoulos@auth.gr",
+    cv: "https://www.physics.auth.gr/uploads/person/translation/cv/218/6ac91825-42f5-47b9-9656-cb3f59564a84.pdf",
     research: ["muon-tomography", "data-analysis-ml"]
   },
   {
@@ -95,8 +86,8 @@ LAB.members = [
     group: "faculty",
     position: { en: "Associate Professor", el: "Αναπληρωτής Καθηγητής" },
     photo: "images/members/konstantinos-kordas.jpg",
-    email: "",
-    cv: "",
+    email: "kostas.kordas@cern.ch",
+    cv: "https://www.physics.auth.gr/wp-content/uploads/2026/05/Kordas_shortCV_2026_gr.pdf",
     research: ["atlas-lhc"]
   },
   {
@@ -104,8 +95,18 @@ LAB.members = [
     name: { en: "Christos Lampoudis", el: "Χρήστος Λαμπούδης" },
     group: "faculty",
     position: { en: "Assistant Professor", el: "Επίκουρος Καθηγητής" },
-    email: "",
-    cv: ""
+    email: "clampoud@auth.ch",
+    cv: "https://www.physics.auth.gr/uploads/person/translation/cv/552/66dc90c4-ee17-4530-b702-fee14d71ad6b.pdf"
+  },
+
+    {
+    id: "spyros-argyropoulos",
+    name: { en: "Spyros Argyropoulos", el: "Σπύρος Αργυρόπουλος" },
+    group: "faculty",
+    position: { en: "Associate Professor", el: "Αναπληρωτής Καθηγητής" }, 
+    photo: "images/members/spyros-argyropoulos.jpg",
+    email: "spyros.argyropoulos@cern.ch",
+    cv: "https://sargyrop.web.cern.ch/"
   },
 
   /* ---------------- Emeriti ---------------- */
@@ -115,9 +116,42 @@ LAB.members = [
     group: "emeriti",
     position: { en: "Professor Emerita", el: "Ομότιμη Καθηγήτρια" },
     photo: "images/members/charikleia-petridou.jpg",
-    email: "",
-    cv: "",
+    email: "petridou@physics.auth.gr",
+    cv: "https://www.physics.auth.gr/wp-content/uploads/2025/02/Petridou-chariclia-cv.pdf",
     research: ["atlas-lhc"]
+  },
+  
+  {
+    id: "anastasios-liolios",
+    name: { en: "Anastasios Liolios", el: "Αναστάσιος Λιόλιος" },
+    group: "emeriti",
+    position: { en: "Professor Emeritus", el: "Ομότιμος Καθηγητής" },
+    photo: "images/members/anastasios-liolios.jpg",
+    email: "anastasios.liolios@cern.ch",
+    cv: "https://www.physics.auth.gr/wp-content/uploads/2025/02/liolios-cv.pdf", 
+
+    research: ["accelerator-physics", "instrumentation", "cast"]
+  },
+
+    {
+    id: "giorgos-kitis",
+    name: { en: "Georgios Kitis", el: "Γεώργιος Κίτης" },
+    group: "emeriti",
+    position: { en: "Professor Emeritus", el: "Ομότιμος Καθηγητής" },
+    photo: "images/members/giorgos-kitis.jpg",
+    email: "gkitis@physics.auth.gr",
+    cv: "https://www.physics.auth.gr/wp-content/uploads/2025/02/georgios-kitis-cv.pdf", 
+    },
+  
+   {
+    id: "christos-eleftheriadis",
+    name: { en: "Christos Eleftheriadis", el: "Χρήστος Ελευθεριάδης" },
+    group: "emeriti",
+    position: { en: "Professor Emeritus", el: "Ομότιμος Καθηγητής" },
+    photo: "images/members/christos-eleftheriadis.jpg",
+    email: "xrh@auth.gr",
+    cv: "https://www.physics.auth.gr/uploads/person/translation/cv/209/e395ea71-c3b4-4b52-9727-c36030e3552d.pdf",
+
   },
 
   /* ---------------- Researchers & Postdocs ---------------- */
@@ -127,7 +161,7 @@ LAB.members = [
     group: "researchers",
     position: { en: "Postdoctoral Researcher", el: "Μεταδιδακτορικός Ερευνητής" },
     photo: "images/members/angelos-tsiamis.jpg",
-    email: "",
+    email: "atsiamis@cern.ch",
     cv: ""
   },
   {
@@ -136,7 +170,7 @@ LAB.members = [
     group: "researchers",
     position: { en: "Researcher", el: "Ερευνήτρια" },
     photo: "images/members/eirini-kasimi.jpg",
-    email: "",
+    email: "eirini.kasimi@cern.ch",
     cv: ""
   },
 
@@ -147,7 +181,7 @@ LAB.members = [
     group: "phd",
     position: { en: "PhD Student", el: "Υποψήφιος Διδάκτωρ" },
     photo: "images/members/ioannis-karakoulias.jpg",
-    email: "",
+    email: "ioannis.karakoulias@cern.ch",
     cv: ""
   },
   {
@@ -155,15 +189,24 @@ LAB.members = [
     name: { en: "Eliana Kapsali", el: "Ελιάνα Καψάλη" },
     group: "phd",
     position: { en: "PhD Student", el: "Υποψήφια Διδάκτωρ" },
-    email: "",
+    email: "eliana.kapsali@cern.ch",
     cv: ""
   },
+  
+  {
+    id: "eleni-papadimitriou",
+    name: { en: "Eleni Papadimitriou", el: "Ελένη Παπαδημητρίου" },
+    group: "phd",
+    email: "eleni.papadimitriou@cern.ch",
+    cv: ""
+  },
+  
   {
     id: "iakovos-tsouros",
     name: { en: "Iakovos Tsouros", el: "Ιάκωβος Τσούρος" },
     group: "phd",
     position: { en: "PhD Student", el: "Υποψήφιος Διδάκτωρ" },
-    email: "",
+    email: "iakovos.tsouros@gmail.com",
     cv: ""
   },
   {
@@ -171,7 +214,15 @@ LAB.members = [
     name: { en: "Evangelos Samouilides", el: "Ευάγγελος Σαμουηλίδης" },
     group: "phd",
     position: { en: "PhD Student", el: "Υποψήφιος Διδάκτωρ" },
-    email: "",
+    email: "esamouil@physics.auth.gr",
+    cv: ""
+  },
+  {
+    id: "giorgos-dianos",
+    name: { en: "Giorgos Dianos", el: "Γιώργος Δίανος" },
+    group: "phd",
+    position: { en: "PhD Student", el: "Υποψήφιος Διδάκτωρ" },
+    email: "georgios.dianos@cern.ch",
     cv: ""
   },
 
@@ -181,36 +232,14 @@ LAB.members = [
     name: { en: "Alexandros Gardikiotis", el: "Αλέξανδρος Γαρδικιώτης" },
     group: "msc",
     position: { en: "MSc Student", el: "Μεταπτυχιακός Φοιτητής" },
-    email: "",
+    email: "agardik@auth.gr",
     cv: ""
   },
 
   /* ---------------- Group not yet set (the old site showed no role) ---------------- */
-  {
-    id: "spyros-argyropoulos",
-    name: { en: "Spyros Argyropoulos", el: "Σπύρος Αργυρόπουλος" },
-    group: "",
-    photo: "images/members/spyros-argyropoulos.jpg",
-    email: "",
-    cv: ""
-  },
-  {
-    id: "eleni-papadimitriou",
-    name: { en: "Eleni Papadimitriou", el: "Ελένη Παπαδημητρίου" },
-    group: "",
-    email: "",
-    cv: ""
-  },
+
+
 
   /* ---------------- Former members ---------------- */
-  {
-    id: "anastasios-liolios",
-    name: { en: "Anastasios Liolios", el: "Αναστάσιος Λιόλιος" },
-    group: "former",
-    position: { en: "Former Member", el: "Πρώην Μέλος" },
-    photo: "images/members/anastasios-liolios.jpg",
-    email: "",
-    cv: "",
-    research: ["accelerator-physics", "instrumentation", "cast"]
-  }
+
 ];
